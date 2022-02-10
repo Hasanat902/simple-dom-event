@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+
+    <section>
+        <h2>Here we use dom event</h2>
+        <button onclick="makeBlue()">Click Here: LightBlue</button>
+        <button id="tomato-btn">Click Here: Tomato</button>
+    </section>
+
+
+    <script>
+        function makeBlue(){
+            document.body.style.backgroundColor = "lightBlue";
+        }
+
+        document.getElementById("tomato-btn").addEventListener("click", function(){
+            document.body.style.backgroundColor = "tomato";
+        })
+    </script>
+    
+</body>
+</html>
